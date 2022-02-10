@@ -10,6 +10,7 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector2 moveDirection;
     private Vector2 lookDirection = new Vector2(0,-1);
+    public int npcid;
 
     // Update is called once per frame
     void Update()
@@ -27,10 +28,10 @@ public class PlayerMovement : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(rb.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
             if (hit.collider != null)
             {
-                NPC character = hit.collider.GetComponent<NPC>();
+                DialogueTrigger character = hit.collider.GetComponent<DialogueTrigger>();
                 if (character != null)
                 {
-                    character.DisplayDialog();
+                    character.TriggerDialogue();
                 }
             }
         }
