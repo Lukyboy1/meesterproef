@@ -7,11 +7,13 @@ public class NPC : MonoBehaviour
     public float displayTime = 4.0f;
     public GameObject dialogBox;
     float timerDisplay;
+    public float npcid;
     // Start is called before the first frame update
     void Start()
     {
         dialogBox.SetActive(false);
         timerDisplay = -1.0f;
+        npcid = 1.0f;
     }
 
     // Update is called once per frame
@@ -19,8 +21,8 @@ public class NPC : MonoBehaviour
     {
         if (timerDisplay >= 0)
         {
-            timerDisplay -= Time.deltaTime;
-            if (timerDisplay < 0)
+            timerDisplay -= Time.deltaTime; 
+            if (timerDisplay < 0) //veranderen naar 'enter' button
             {
                 dialogBox.SetActive(false);
             }
