@@ -63,6 +63,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Beroepen\Bakker.cs" />
+    <Compile Include="Assets\Scripts\Beroepen\Groenteboer.cs" />
+    <Compile Include="Assets\Scripts\Beroepen\Houthakker.cs" />
+    <Compile Include="Assets\Scripts\Beroepen\Slager.cs" />
+    <Compile Include="Assets\Scripts\Beroepen\Veeboer.cs" />
+    <Compile Include="Assets\Scripts\Beroepen\Visser.cs" />
     <Compile Include="Assets\Scripts\Boodschappenlijst.cs" />
     <Compile Include="Assets\Scripts\Dialogue.cs" />
     <Compile Include="Assets\Scripts\DialogueManager.cs" />

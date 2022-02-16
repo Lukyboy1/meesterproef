@@ -12,6 +12,9 @@ public class DialogueManager : MonoBehaviour
 
     public Animator animator;
 
+    public List<string> ingredientcollector;
+    public List<string> ingredients;
+
     private Queue<string> sentences;
 
     // Start is called before the first frame update
@@ -57,13 +60,26 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray()) 
         {
             dialogueText.text += letter;
-            yield return null; //extra delay toevoegen
+            yield return new WaitForSeconds(0.02f); //extra delay toevoegen
         }
     }
 
     void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+
+        TriggerRecipe(nameText.text);
+    }
+
+    public void TriggerRecipe(string name)
+    {
+        int id = ingredientcollector.IndexOf(name);
+        string ingredient = ingredients[id];
+
+
+
+        FindObjectOfType<Boodschappenlijst>().BoodschappenlijstManager(ingredient);
+        
     }
 }
 

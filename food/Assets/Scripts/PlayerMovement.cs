@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 moveDirection;
     private Vector2 lookDirection = new Vector2(0,-1);
     public int npcid;
+    public bool recipeActive;
 
     // Update is called once per frame
     void Update()
@@ -36,7 +37,8 @@ public class PlayerMovement : MonoBehaviour
                 }
                 if (start != null)
                 {
-                    start.StartRecipe(); 
+                    start.StartRecipe();
+                    recipeActive = true;
                 }
             }
         }
