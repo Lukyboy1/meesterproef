@@ -26,7 +26,7 @@ public class DialogueManager : MonoBehaviour
         animator.SetBool("IsOpen", true);
 
         nameText.text = dialogue.name;
-
+        
         sentences.Clear();
 
         foreach (string sentence in dialogue.sentences)
@@ -35,7 +35,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
-   
+
     }
 
     public void DisplayNextSentence()
@@ -57,7 +57,7 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return null;
+            yield return null; //extra delay toevoegen
         }
     }
 

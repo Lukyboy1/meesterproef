@@ -29,9 +29,14 @@ public class PlayerMovement : MonoBehaviour
             if (hit.collider != null)
             {
                 DialogueTrigger character = hit.collider.GetComponent<DialogueTrigger>();
+                RecipeStart start = hit.collider.GetComponent<RecipeStart>();
                 if (character != null)
                 {
                     character.TriggerDialogue();
+                }
+                if (start != null)
+                {
+                    start.StartRecipe(); //werkt niet werkt niet
                 }
             }
         }

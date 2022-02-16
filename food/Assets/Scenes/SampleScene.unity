@@ -3912,6 +3912,69 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &652876180 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8499006710550864852, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+    type: 3}
+  m_PrefabInstance: {fileID: 700913910}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &652876181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652876180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8640e4347f5df324c9a8bde282105459, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: Kok
+    sentences:
+    - Hier is het recept van mijn nieuwste gezonde gerecht.
+    - "De ingredi\xEBnten moeten gehaald worden bij de slager, groenteboer en visser."
+    - Veel succes en eet smakelijk!
+--- !u!114 &652876182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652876180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76cd6cb642b2c0f41a3aca3037d74279, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &652876183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652876180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efdd564518159fa41a453a80a6ac4921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  displayTime: 4
+  dialogBox: {fileID: 0}
+  npcid: 0
+--- !u!114 &652876187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 652876180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9d10544f8c43ae45ab701ea62da03d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &661923955
 GameObject:
   m_ObjectHideFlags: 3
@@ -3999,6 +4062,95 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &700913910
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 5.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1090015706178965860, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662620558466866401, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.7830007
+      objectReference: {fileID: 0}
+    - target: {fileID: 1662620558466866401, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.43399858
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674063778698066963, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -891359939
+      objectReference: {fileID: 0}
+    - target: {fileID: 1674063778698066963, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8499006710550864852, guid: 6cbc517df0d697c49ac75ce1d3bceb5f,
+        type: 3}
+      propertyPath: m_Name
+      value: Kok
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6cbc517df0d697c49ac75ce1d3bceb5f, type: 3}
 --- !u!1 &764649226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5544,7 +5696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76cd6cb642b2c0f41a3aca3037d74279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  npcid: 1
 --- !u!114 &2110859902
 MonoBehaviour:
   m_ObjectHideFlags: 0
