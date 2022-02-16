@@ -36,7 +36,7 @@ public class PlayerMovement : MonoBehaviour
                 }
                 if (start != null)
                 {
-                    start.StartRecipe(); //werkt niet werkt niet
+                    start.StartRecipe(); 
                 }
             }
         }

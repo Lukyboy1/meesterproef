@@ -54,7 +54,7 @@ public class DialogueManager : MonoBehaviour
     IEnumerator TypeSentence (string sentence)
     {
         dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        foreach (char letter in sentence.ToCharArray()) 
         {
             dialogueText.text += letter;
             yield return null; //extra delay toevoegen

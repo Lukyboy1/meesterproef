@@ -13,11 +13,11 @@ public class RecipeStart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        StartRecipe();
+        
     }
 
     public void StartRecipe()
     {
-        
+        FindObjectOfType<Boodschappenlijst>().BoodschappenlijstManager();
     }
 }
