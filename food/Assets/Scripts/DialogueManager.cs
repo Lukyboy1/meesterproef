@@ -74,8 +74,12 @@ public class DialogueManager : MonoBehaviour
     public void TriggerRecipe(string name)
     {
         int id = ingredientcollector.IndexOf(name);
+        if (id >= ingredients.Count || id < 0)
+        {
+            return;
+        }
         string ingredient = ingredients[id];
-
+        Debug.Log(id);
 
 
         FindObjectOfType<Boodschappenlijst>().BoodschappenlijstManager(ingredient);

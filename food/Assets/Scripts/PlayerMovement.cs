@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public Rigidbody2D rb;
     public Animator animator;
+    public LayerMask layerMask;
 
     private Vector2 moveDirection;
     private Vector2 lookDirection = new Vector2(0,-1);
@@ -26,16 +27,16 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            RaycastHit2D hit = Physics2D.Raycast(rb.position + Vector2.up * 0.2f, lookDirection, 1.5f, LayerMask.GetMask("NPC"));
-            if (hit.collider != null)
+            RaycastHit2D hit = Physics2D.Raycast(rb.position, lookDirection, 1.5f, layerMask);
+            if (hit.collider)
             {
                 DialogueTrigger character = hit.collider.GetComponent<DialogueTrigger>();
                 RecipeStart start = hit.collider.GetComponent<RecipeStart>();
-                if (character != null)
+                if (!Object.ReferenceEquals(character, null))
                 {
                     character.TriggerDialogue();
                 }
-                if (start != null)
+                if (!Object.ReferenceEquals(start, null))
                 {
                     start.StartRecipe();
                     recipeActive = true;
