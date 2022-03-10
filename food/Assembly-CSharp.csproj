@@ -71,6 +71,7 @@
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\RecipeStart.cs" />
     <Compile Include="Assets\Scripts\layers.cs" />
+    <Compile Include="Assets\Scripts\startCutscene.cs" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
@@ -652,6 +653,10 @@
       <Project>{5CF80101-F0F6-549F-5D63-B67967854C2F}</Project>
       <Name>Unity.2D.SpriteShape.Editor</Name>
     </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj">
+      <Project>{D05E8807-6E50-47EF-C7CB-EBDCFFDAC9BC}</Project>
+      <Name>Unity.2D.Tilemap.Extras.Editor</Name>
+    </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
       <Project>{8652AB4D-7258-7EA0-4187-3F96F1E7C1CD}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
@@ -719,6 +724,10 @@
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj">
       <Project>{B0A05B5B-92D6-5409-2506-B406B6C78993}</Project>
       <Name>Unity.2D.Animation.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj">
+      <Project>{A0B31F38-AAE8-259F-9E78-1CF90881CF65}</Project>
+      <Name>Unity.2D.Tilemap.Extras</Name>
     </ProjectReference>
     <ProjectReference Include="com.unity.cinemachine.editor.csproj">
       <Project>{90F4F3A1-0550-0AFB-7955-6336A29439F3}</Project>

@@ -25,7 +25,7 @@ public class Boodschappenlijst : MonoBehaviour
     bool regel5;
     bool regel6;
 
-    public bool ingredientsCollected;
+    public static bool ingredientsCollected;
 
     // Start is called before the first frame update
     void Start()

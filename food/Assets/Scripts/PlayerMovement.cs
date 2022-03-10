@@ -65,18 +65,21 @@ public class PlayerMovement : MonoBehaviour
 
     void Move()
     {
-        rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
-        if (moveDirection.x + moveDirection.y > 1.0f)
+        if (!startCutscene.isCutsceneActive)
         {
-            rb.velocity = new Vector2(moveDirection.x * moveSpeed / 1.4f, moveDirection.y * moveSpeed / 1.4f);
-        }
-        if (moveDirection.x + moveDirection.y < -1.0f)
-        {
-            rb.velocity = new Vector2(moveDirection.x * moveSpeed / 1.4f, moveDirection.y * moveSpeed / 1.4f);
-        }
-        if (moveDirection.x + moveDirection.y == 0.0f)
-        {
-            rb.velocity = new Vector2(moveDirection.x * moveSpeed / 1.4f, moveDirection.y * moveSpeed / 1.4f);
+            rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+            if (moveDirection.x + moveDirection.y > 1.0f)
+            {
+                rb.velocity = new Vector2(moveDirection.x * moveSpeed / 1.4f, moveDirection.y * moveSpeed / 1.4f);
+            }
+            if (moveDirection.x + moveDirection.y < -1.0f)
+            {
+                rb.velocity = new Vector2(moveDirection.x * moveSpeed / 1.4f, moveDirection.y * moveSpeed / 1.4f);
+            }
+            if (moveDirection.x + moveDirection.y == 0.0f)
+            {
+                rb.velocity = new Vector2(moveDirection.x * moveSpeed / 1.4f, moveDirection.y * moveSpeed / 1.4f);
+            }
         }
     }
 }
